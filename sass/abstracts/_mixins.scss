@@ -1,0 +1,35 @@
+@import './_variables.scss';
+
+@mixin maxWidth {
+    max-width: $Desktop;
+}
+
+
+@mixin radialGradientGreen {
+    background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+    padding: 12px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+@mixin freeRadialGradient {
+    background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+}
+
+
+
+// wrappable
+@mixin bannerMixin($basis) {
+    flex: 1;
+    flex-basis: $basis;
+}
+
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}

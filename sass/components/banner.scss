@@ -1,0 +1,78 @@
+@import '../abstracts/_variables.scss';
+@import '../abstracts/mixins';
+
+.banner__background {
+    background-color: $very-light-gray;
+}
+
+.banner {
+    @include maxWidth;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    min-height: 460px;
+
+
+    // Elements
+    &__left {
+        padding: 20px;
+        @include bannerMixin(250px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        & h1 {
+            color: $dark-blue;
+            font-size: clamp(20px, 45px, 55px);
+            font-weight: 200;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            color: $grayish-blue;
+            padding-bottom: 40px;
+        }
+
+        &--wrapper {
+            max-width: 600px;
+
+            & a {
+                @include radialGradientGreen;
+            }
+        }
+
+    }
+
+    // LEFT SIDE
+    &__right {
+        @include bannerMixin(350px);
+        max-width: 650px;
+        position: relative;
+        overflow: hidden;
+
+
+        &--mockups {
+            object-fit: cover;
+            border: 2px solid $very-light-gray;
+            width: 100%;
+            margin-bottom: auto;
+            height: 100%;
+            margin-top: -40px;
+            position: relative;
+            z-index: 20;
+        }
+
+        &--shapes {
+            object-fit: contain;
+            max-width: 100%;
+            margin-bottom: auto;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../abstracts/_variables.scss';
+@import '../abstracts/_mixins.scss';
+
+
+.secondary {
+    background-color: $light-grayish-blue;
+    padding: 20px;
+
+    &__wrapper {
+        @include maxWidth;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        &--header {
+            max-width: 600px;
+
+            & h2 {
+                color: $dark-blue;
+                margin: 0;
+                font-size: 2em;
+                font-weight: 300;
+            }
+
+            & p {
+                color: $grayish-blue;
+            }
+        }
+    }
+
+
+    // cards wrapper
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin: 70px 0;
+
+        &--figure {
+            margin: 0;
+            max-width: 300px;
+            flex: 1;
+            flex-basis: 400px;
+
+
+            & h2 {
+                margin: 0;
+                color: $dark-blue;
+                font-size: 1.5em;
+                font-weight: 300;
+                margin: 20px 0 10px 0;
+            }
+
+            & p {
+                color: $grayish-blue;
+                margin: 0;
+                font-weight: lighter;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.secondary {
+  background-color: hsl(220, 16%, 96%);
+  padding: 20px;
+}
+.secondary__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.secondary__wrapper--header {
+  max-width: 600px;
+}
+.secondary__wrapper--header h2 {
+  color: hsl(233, 26%, 24%);
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+}
+.secondary__wrapper--header p {
+  color: hsl(233, 8%, 62%);
+}
+.secondary__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 70px 0;
+}
+.secondary__cards--figure {
+  margin: 0;
+  max-width: 300px;
+  flex: 1;
+  flex-basis: 400px;
+}
+.secondary__cards--figure h2 {
+  margin: 0;
+  color: hsl(233, 26%, 24%);
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 20px 0 10px 0;
+}
+.secondary__cards--figure p {
+  color: hsl(233, 8%, 62%);
+  margin: 0;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=secondaryBanner.css.map */

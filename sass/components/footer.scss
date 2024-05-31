@@ -1,0 +1,67 @@
+@import '../abstracts/_variables.scss';
+@import '../abstracts/mixins';
+
+footer {
+    background-color: $dark-blue;
+    padding: 50px 20px;
+}
+
+.footer__link {
+    @include radialGradientGreen;
+    max-width: fit-content;
+    margin-left: auto;
+}
+
+.footer__wrapper {
+    @include maxWidth;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: $dark-blue;
+
+
+    &--icons {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    &--links {
+        @include displayFlex;
+        flex-direction: column;
+        flex: 1;
+        flex-basis: 300px;
+        max-width: 330px;
+        max-height: 100px;
+        justify-content: space-between;
+
+        &:last-of-type {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        & a {
+            color: white;
+            text-decoration: none;
+            font-weight: lighter;
+            font-size: .8em;
+        }
+    }
+
+
+    &--logo {
+        background-color: white;
+    }
+
+    &--iconsContainer {
+        @include displayFlex;
+        gap: 10px;
+        margin-top: 80px;
+        max-width: 180px;
+
+        & img {
+            width: 23px;
+            height: 23px;
+        }
+    }
+}

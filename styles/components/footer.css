@@ -1,0 +1,67 @@
+footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 50px 20px;
+}
+
+.footer__link {
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 12px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  max-width: fit-content;
+  margin-left: auto;
+}
+
+.footer__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: hsl(233, 26%, 24%);
+}
+.footer__wrapper--icons {
+  flex: 1;
+  max-width: 250px;
+}
+.footer__wrapper--links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 300px;
+  max-width: 330px;
+  max-height: 100px;
+  justify-content: space-between;
+}
+.footer__wrapper--links:last-of-type {
+  margin-left: auto;
+  text-align: right;
+}
+.footer__wrapper--links a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+.footer__wrapper--logo {
+  background-color: white;
+}
+.footer__wrapper--iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 80px;
+  max-width: 180px;
+}
+.footer__wrapper--iconsContainer img {
+  width: 23px;
+  height: 23px;
+}
+
+/*# sourceMappingURL=footer.css.map */
